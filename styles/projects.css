@@ -1,0 +1,127 @@
+/* root */
+:root {
+  --green: #49fc05;
+  --white: #f5f5f5;
+  --gray: #cdcccc;
+  --black: #121212;
+}
+
+/* Welcome */
+.welcome-section .welcome-title {
+  font-size: 56px;
+  max-width: 1300px;
+  padding: 75px;
+  background-image: linear-gradient(to left, #3ee5ec, #ee74e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Actions */
+.actions-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.actions-section .info {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.actions-section .info h1 {
+  font-size: 35px;
+}
+
+.actions-section .info p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: var(--gray);
+}
+
+.actions-section .cards {
+  display: flex;
+  gap: 50px;
+}
+
+.actions-section .cards .card {
+  background-color: #323443;
+  min-width: 200px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  padding: 30px 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.actions-section .cards .card img {
+  width: 50px;
+  position: absolute;
+  top: -50px;
+}
+
+/*  projects */
+.projects-section .title {
+  font-size: 40px;
+  margin: 30px 0;
+}
+
+.projects-section .project-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.projects-section .project-cards .project-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.projects-section .project-cards .project-card .card-image {
+  background-color: #323443;
+  padding: 40px 60px 0;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.projects-section .project-cards .project-card .card-image:hover {
+  background: linear-gradient(45deg, #c899ff 0%, #43dce7 52%, #49f5a2 90%);
+}
+
+.projects-section .project-cards .project-card .card-image .arrow-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: #414141;
+  display: grid;
+  place-items: center;
+}
+
+.projects-section .project-cards .project-card .project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 700px;
+}
+
+.projects-section .project-cards .project-card .project-info h4 {
+  font-size: 15px;
+}
+
+.projects-section .project-cards .project-card .project-info h1 {
+  font-size: 40px;
+}
+
+.projects-section .project-cards .project-card .project-info p {
+  color: var(--gray);
+  line-height: 1.6;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
